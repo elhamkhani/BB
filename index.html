@@ -10,22 +10,22 @@
 
 <body>
 
-<div data-role="page" id="foo">
+<div data-role="page" id="home">
 
 	<div data-role="header">
-		<h1>First Page</h1>
+		<h1>Home</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">
 		<div data-role="collapsible-set" data-theme="b" data-content-theme="d">
     <div data-role="collapsible">
-        <h2>Filtered list</h2>
+        <h2>My Tasks</h2>
         <ul data-role="listview" data-filter="true" data-filter-theme="c" data-divider-theme="d">
-            <li><a href="index.html">Adam Kinkaid</a></li>
-            <li><a href="index.html">Alex Wickerham</a></li>
-            <li><a href="index.html">Avery Johnson</a></li>
-            <li><a href="index.html">Bob Cabot</a></li>
-            <li><a href="index.html">Caleb Booth</a></li>
+            <li><a href="#tasks">Tasks<span class="ui-li-count">12</span></a></li>
+            <li><a href="index.html">Today's Checks<span class="ui-li-count">1</span></a></li>
+            <li><a href="index.html">Last Week Checks<span class="ui-li-count">32</span></a></li>
+            <li><a href="index.html">Alerts<span class="ui-li-count">4</span></a></li>
+            <li><a href="index.html">Mails<span class="ui-li-count">58</span></a></li>
         </ul>
     </div>
     <div data-role="collapsible">
@@ -79,15 +79,15 @@
 
 
 <!-- Start of second page -->
-<div data-role="page" id="bar">
+<div data-role="page" id="tasks">
 
 	<div data-role="header">
-		<h1>Bar</h1>
+		<h1>Tasks</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">
 		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-		<p><a href="#foo" data-transition="slideup">Back to foo</a></p>
+		<p><a href="#home" data-transition="slideup">Back to home</a></p>
 	</div><!-- /content -->
 
 	<div data-role="footer">
